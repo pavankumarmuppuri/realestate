@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | DreamHomes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    footer {
+      background: #212529;
+      color: white;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 10px;
+      min-height: 400px;
+    }
+
+    .form-section {
+      background-color: #f8f9fa;
+      padding: 2rem;
+      border-radius: 10px;
+      height: 100%;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-info {
+      padding: 2rem 0;
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+
+    .contact-info i {
+      font-size: 1.2rem;
+      margin-right: 8px;
+      color: #0d6efd;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #0d6efd;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #084298;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    @media (max-width: 767px) {
+      .form-section, .map-container iframe {
+        min-height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+  <a class="navbar-brand" href="index.html">DreamHomes</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="listings.html">Listings</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<main class="container my-5">
+  <h2 class="mb-4 text-center">Contact Us</h2>
+  <div class="row g-4 align-items-stretch">
+    <!-- Contact Form -->
+    <div class="col-md-6 d-flex">
+      <div class="form-section w-100">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Office Location Map -->
+    <div class="col-md-6">
+      <h5>Our Office Location</h5>
+      <div class="map-container rounded shadow-sm">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15225.714626787256!2d78.434320646796!3d17.439185735306854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90c55bb43183%3A0x1abc135b23ee2703!2sAmeerpet%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1751102764939!5m2!1sen!2sin" 
+          loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Contact Info Section -->
+<section class="contact-info">
+  <div class="container">
+    <p><i class="bi bi-telephone"></i> +91 98765 43210</p>
+    <p><i class="bi bi-envelope"></i> support@dreamhomes.com</p>
+    <div class="social-icons mt-3">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Sticky Footer -->
+<footer class="text-center py-3">
+  &copy; 2025 DreamHomes. All rights reserved.
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
